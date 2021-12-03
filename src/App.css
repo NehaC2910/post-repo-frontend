@@ -1,0 +1,380 @@
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+  -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+.login::before, .login::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: rgba(69, 105, 144, 0.15);
+  -webkit-animation: wawes 6s infinite linear;
+  -moz-animation: wawes 6s infinite linear;
+  animation: wawes 6s infinite linear;
+}
+.login::after {
+  left: 35%;
+  bottom: -125%;
+  background-color: rgba(2, 128, 144, 0.2);
+  -webkit-animation: wawes 7s infinite;
+  -moz-animation: wawes 7s infinite;
+  animation: wawes 7s infinite;
+}
+.login > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+.login > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #f45b69;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.login > button:hover {
+  background-color: #f24353;
+}
+
+
+
+
+.registration {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+  -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+.registration::before, .registration::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.registration::before {
+  left: 30%;
+  bottom: -50%;
+  background-color: rgba(60, 129, 202, 0.15);
+  -webkit-animation: wawes 6s infinite linear;
+  -moz-animation: wawes 6s infinite linear;
+  animation: wawes 6s infinite linear;
+}
+.registration::after {
+  left: 30%;
+  bottom: -150%;
+  background-color: rgba(92, 37, 155, 0.2);
+  -webkit-animation: wawes 7s infinite;
+  -moz-animation: wawes 7s infinite;
+  animation: wawes 7s infinite;
+}
+.registration > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+.registration > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 140px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #f45b69;
+  -webkit-transition: background-color 300ms;
+  -moz-transition: background-color 300ms;
+  transition: background-color 300ms;
+}
+.registration > button:hover {
+  background-color: #f24353;
+}
+
+@-webkit-keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes wawes {
+  from {
+    -moz-transform: rotate(0);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes wawes {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .registration {
+    background-color: rgb(144, 174, 207);
+    width:350px;
+    z-index: -1;
+  }
+  .registration > input {
+  font-size: 14px;
+  }
+  .registration > button {
+      font-size: 14px;
+  }
+  .login {
+      background-color: rgb(144, 174, 207);
+      width:350px;
+      z-index: -1;
+    }
+    .login > input {
+    font-size: 14px;
+    }
+    .login > button {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+  .registration .login{
+    background-color: rgb(104, 207, 150);
+    width:300px;
+    z-index: -1;
+  }
+  .registration > input {
+  font-size: 12px;
+  }
+  .registration > button {
+      font-size: 12px;
+  }
+
+  .login .login{
+      background-color: rgb(104, 207, 150);
+      width:300px;
+      z-index: -1;
+    }
+    .login > input {
+    font-size: 12px;
+    }
+    .login > button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+  .registration {
+    background-color: lightblue;
+    width:250px;
+    z-index: -1;
+  }
+  .registration > input {
+  font-size: 10px;
+  }
+  .registration > button {
+      font-size: 10px;
+  }
+
+  .login {
+      background-color: lightblue;
+      width:250px;
+      z-index: -1;
+    }
+    .login > input {
+    font-size: 10px;
+    }
+    .login > button {
+        font-size: 10px;
+    }
+}
+
+.contectUs{
+ width: 70%;
+ height: 70vh;
+ border: 1px solid rgb(211, 211, 211);
+}
+
+
+
+
+
+
+.registerButton{
+  float: right;
+  margin-top:10px;
+  border-radius: 10px;
+  padding:7px
+}
+
+.passValidation{
+  /* margin: 10px 10px 30px ; */
+  opacity: 0.5;
+  transition:0.3;
+
+}
+.passValidation span{
+  /* font-size: 22px; */
+  color: rgb(26, 43, 68);
+  margin-left: 45px;
+}
+
+.fa-times{
+opacity: 0
+}
+.fa-check{
+opacity: 1;
+}
+
+.passValidation .icon{
+  position: absolute;
+  text-align: center;
+  width:20px;
+  height:20px;
+  line-height: 30px;
+  font-size:large;
+  border-radius: 50%;
+  color: rgb(26, 43, 68);
+  border: 2px solid  rgb(26, 43, 68);
+}
+
+.registration #show_hide{
+  color: rgb(26, 43, 68);
+  font-size: 22px;
+  transform:translateX(320px) translateY(-45px);
+  cursor:pointer;
+
+}
+
+
+/* ////Register///// */
+#register, #login {
+  width: 300px;
+  border: 1px solid #d6d7da;
+  padding: 0px 15px 15px 15px;
+  border-radius: 5px;
+  font-family: arial;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 100px auto;
+  padding-bottom: 60px;
+}
+
+form label, form input {
+  /* display: block; */
+  /* margin-bottom: 10px; */
+ 
+  width: 90%
+}
+
+.registration input {
+  padding: 10px;
+  border: solid 1px #9b8e8e;
+
+}
+
+.button {
+  background-color: #00BFFF;
+  border-color: #3ac162;
+  font-weight: bold;
+  padding: 12px 15px;
+  color: #ffffff;
+  width:100%
+
+}
+
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+
+.sucessMsg {
+  color: #6B8E23;
+  margin-bottom: 10px;
+}
+
+.zoom:hover{
+  transform: scale(1.1);
+  transition: transform .2s;
+}
